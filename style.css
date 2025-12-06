@@ -1,0 +1,54 @@
+/* Reset rapide */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body avec fond coloré et goofy */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    text-align: center;
+    color: #333;
+}
+
+/* Header fun */
+header h1 {
+    margin: 20px;
+    font-size: 2em;
+    color: #fff;
+    text-shadow: 2px 2px #ff0, -2px -2px #0ff;
+}
+
+/* Galerie funky */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px dashed yellow;
+    border-radius: 20px;
+    transition: transform 0.3s, rotate 0.3s;
+}
+
+/* Effet goofy au hover */
+.gallery img:hover {
+    transform: rotate(20deg) scale(1.2);
+    cursor: pointer;
+}
+
+/* Footer rigolo */
+footer {
+    margin: 30px 0;
+    font-size: 1.2em;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
