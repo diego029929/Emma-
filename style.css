@@ -5,50 +5,70 @@
     box-sizing: border-box;
 }
 
-/* Body avec fond coloré et goofy */
+/* Body 100% rose ultra goofy */
 body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    background: pink;
     text-align: center;
-    color: #333;
-}
-
-/* Header fun */
-header h1 {
-    margin: 20px;
-    font-size: 2em;
     color: #fff;
-    text-shadow: 2px 2px #ff0, -2px -2px #0ff;
 }
 
-/* Galerie funky */
+/* Header ultra flashy */
+header h1 {
+    font-size: 3em;
+    margin: 20px;
+    color: #ff69b4;
+    text-shadow: 2px 2px #fff, -2px -2px #ff1493, 3px 3px #ffb6c1;
+}
+
+header p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 1px 1px #ff69b4;
+}
+
+/* Galerie complètement goofy */
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 25px;
     padding: 20px;
 }
 
-.gallery img {
+.img-wrapper {
+    display: inline-block;
+    position: relative;
+    font-size: 2em; /* taille des emojis 🥀 */
+    animation: bounce 2s infinite;
+}
+
+.img-wrapper img {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border: 5px dashed yellow;
-    border-radius: 20px;
-    transition: transform 0.3s, rotate 0.3s;
+    border: 8px dotted #ff1493;
+    border-radius: 30px;
+    transition: transform 0.5s, rotate 0.5s, scale 0.5s;
 }
 
-/* Effet goofy au hover */
-.gallery img:hover {
-    transform: rotate(20deg) scale(1.2);
+/* Effet hover ultra goofy */
+.img-wrapper img:hover {
+    transform: rotate(25deg) scale(1.3) translateY(-10px);
     cursor: pointer;
 }
 
-/* Footer rigolo */
+/* Animation bounce pour les 🥀 */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Footer aussi goofy */
 footer {
-    margin: 30px 0;
-    font-size: 1.2em;
+    margin: 40px 0;
+    font-size: 1.5em;
     color: #fff;
-    text-shadow: 1px 1px #000;
+    text-shadow: 1px 1px #ff1493, 2px 2px #ff69b4;
 }
